@@ -1,0 +1,432 @@
+
+
+<html>
+<head>
+  <style>
+h1{color:white; font-size:40px; text-align:center}
+body {
+      background-image: url('Art.png');
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+    }
+    .timeline {
+      list-style: none;
+      padding: 0;
+      position: relative;
+    }
+
+    .timeline:before {
+      content: '';
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      width: 3px;
+      background: black;
+      left: 50%;
+      margin-left: -1px;
+    }
+
+    .timeline li {
+      position: relative;
+      min-height: 50px;
+      padding: 20px;
+      margin-bottom: 50px;
+    }
+
+    .timeline li:before,
+    .timeline li:after {
+      content: '';
+      display: table;
+      clear: both;
+    }
+
+    .timeline li:after {
+      clear: both;
+    }
+
+    .timeline li .timeline-panel {
+      position: relative;
+      float: right;
+      width: 45%;
+      padding: 20px;
+      background: #f5f5f5;
+      border-radius: 6px;
+      -webkit-box-shadow: 0 1px 6px rgba(0, 0, 0, 0.1);
+      box-shadow: 0 1px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    .timeline li .timeline-panel:before {
+      content: '';
+      position: absolute;
+      top: 26px;
+      right: -15px;
+      display: inline-block;
+      border-top: 15px solid transparent;
+      border-left: 15px solid #f5f5f5;
+      border-right: 0 solid #f5f5f5;
+      border-bottom: 15px solid transparent;
+    }
+
+    .timeline li .timeline-panel:after {
+      content: '';
+      position: absolute;
+      top: 27px;
+      right: -14px;
+      display: inline-block;
+      border-top: 14px solid transparent;
+      border-left: 14px solid #fff;
+      border-right: 0 solid #fff;
+      border-bottom: 14px solid transparent;
+    }
+
+    .timeline li .timeline-panel-2 {
+      position: relative;
+      float: right;
+      width: 45%;
+      padding: 20px;
+      background: #f5f5f5;
+      border-radius: 6px;
+      -webkit-box-shadow: 0 1px 6px rgba(0, 0, 0, 0.1);
+      box-shadow: 0 1px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    .timeline li .timeline-panel-2:before {
+      content: '';
+      position: absolute;
+      top: 26px;
+      right: -15px;
+      display: inline-block;
+      border-top: 15px solid transparent;
+      border-left: 15px solid #f5f5f5;
+      border-right: 0 solid #f5f5f5;
+      border-bottom: 15px solid transparent;
+    }
+
+    .timeline li .timeline-panel-2:after {
+      content: '';
+      position: absolute;
+      top: 27px;
+      right: -14px;
+      display: inline-block;
+      border-top: 14px solid transparent;
+      border-left: 14px solid #fff;
+      border-right: 0 solid #fff;
+      border-bottom: 14px solid transparent;
+    }
+
+   .timeline li .timeline-panel-3 {
+      position: relative;
+      float: right;
+      width: 45%;
+      padding: 20px;
+      background: #f5f5f5;
+      border-radius: 6px;
+      -webkit-box-shadow: 0 1px 6px rgba(0, 0, 0, 0.1);
+      box-shadow: 0 1px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    .timeline li .timeline-panel-3:before {
+      content: '';
+      position: absolute;
+      top: 26px;
+      right: -15px;
+      display: inline-block;
+      border-top: 15px solid transparent;
+      border-left: 15px solid #f5f5f5;
+      border-right: 0 solid #f5f5f5;
+      border-bottom: 15px solid transparent;
+    }
+
+    .timeline li .timeline-panel-3:after {
+      content: '';
+      position: absolute;
+      top: 27px;
+      right: -14px;
+      display: inline-block;
+      border-top: 14px solid transparent;
+      border-left: 14px solid #fff;
+      border-right: 0 solid #fff;
+      border-bottom: 14px solid transparent;
+    }
+
+    .timeline li .timeline-badge {
+      color: yellow;
+      width: 50px;
+      height: 50px;
+      line-height: 50px;
+      font-size: 1.4em;
+      text-align: center;
+      position: absolute;
+      top: 10%;
+      left: 45.5%;
+      margin-left: -25px;
+      background-color: brown;
+      border-radius: 50%;
+    }
+
+    .timeline li .timeline-badge-2 {
+      color: yellow;
+      width: 50px;
+      height: 50px;
+      line-height: 50px;
+      font-size: 1.4em;
+      text-align: center;
+      position: absolute;
+      top: 10%;
+      left: 53.5%;
+      margin-left: -25px;
+      background-color: brown;
+      border-radius: 50%;
+    }
+
+    .timeline li .timeline-badge-3 {
+      color: yellow;
+      width: 50px;
+      height: 50px;
+      line-height: 50px;
+      font-size: 1.4em;
+      text-align: center;
+      position: absolute;
+      top: 3%;
+      left: 45.5%;
+      margin-left: -25px;
+      background-color: brown;
+      border-radius: 50%;
+    }
+
+    .timeline li.timeline-inverted .timeline-panel {
+      float: left;
+    }
+
+    .timeline li.timeline-inverted-2 .timeline-panel-3 {
+      float: left;
+    }
+
+    .timeline li.timeline-inverted .timeline-panel:before {
+      border-left-width: 0;
+      border-right-width: 15px;
+      left: -15px;
+      right: auto;
+    }
+
+    .timeline li.timeline-inverted .timeline-panel:after {
+      border-left-width: 0;
+      border-right-width: 14px;
+      left: -14px;
+      right: auto;
+    }
+
+    .timeline-title {
+      margin-top: 0;
+      color: inherit;
+    }
+
+    .timeline-body > p,
+    .timeline-body > ul {
+      margin-bottom: 0;
+    }
+
+    .timeline-body > p + p {
+      margin-top: 5px;
+    }
+
+    .timeline li:hover .timeline-panel {
+      background-color: #f2dca6;
+    }
+
+    .timeline li:hover .timeline-panel-2 {
+      background-color: #f2dca6;
+    }
+
+    .timeline li:hover .timeline-panel-3 {
+      background-color: #f2dca6;
+    }
+
+.timeline li:hover .timeline-badge {
+      animation: expand 1s ease-out infinite;
+    }
+
+.timeline li:hover .timeline-badge-2 {
+      animation: expand 1s ease-out infinite;
+    }
+
+.timeline li:hover .timeline-badge-3 {
+      animation: expand 1s ease-out infinite;
+    }
+
+@keyframes expand {
+  0% {
+    box-shadow: 0 0 0 -5px;
+  }
+
+  100% {
+    box-shadow: 0 0 0 7px rgba(195, 233, 230, 0.1);
+  }
+}
+
+
+  </style>
+<h1 style ="font-family:georgia">The Day of Mourning</h1>
+<div style="background: rgba(0, 0, 0, 0.5); backdrop-filter: blur(1px); padding: 10px;">
+<p style ="color:white; font-size:18px;"><b>The Day of Mourning was a culmination of all the discrimination, exclusion, and prejudice faced by the Aboriginals. Although the protest did not have a powerful short-term impact, it was significant in the long run. It inspired and paved the way for Aboriginal Civil Rights movements throughout Australia and all reconciliatory measures taken by the government are testimonies of its significance.</b></p>
+</div>
+</head>
+<body>
+  <ul class="timeline">
+    <li>
+      <div class="timeline-badge">1</div>
+      <div class="timeline-panel">
+        <div class="timeline-heading">
+          <h3 class="timeline-title">1788-1838</h3>
+        </div>
+        <div class="timeline-body">
+          <p>On the <i>26th of January 1788</i>, the First Fleet (a fleet of eleven ships hailing from Britain) disembarked at Sydney Cove and established a convict settlement. Although initial interactions between the Aboriginals (the indigenous inhabitants of the land) and the Britishers were peaceful, the outsiders brought disease to the land and desired to expand their settlements. The Aborigines disliked their intentions and soon violence erupted. Eventually, by <i>1838,</i>, due to the combined effects of massacres (such as the <i>Myall Creek massacre</i>) and widespread disease, the Aboriginal population was reduced by about 80% (from 300,000 to 58,000).</p>
+        </div>
+      </div>
+    </li>
+    <li class="timeline-inverted">
+      <div class="timeline-badge-2">2</div>
+      <div class="timeline-panel">
+        <div class="timeline-heading">
+          <h3 class="timeline-title">1890</h3>
+        </div>
+        <div class="timeline-body">
+          <p>The <i>Australian Protection Board</i> (established in 1883 to manage ‘<i>reserves</i>’ and look after the welfare of the Aboriginals) developed a policy to remove Aboriginal children of mixed descent and place them in white families to merge them into the wider society. They did this to diminish the growth of the ‘<i>wild half-caste race</i>’(Aboriginals).</p>
+        </div>
+      </div>
+    </li>
+    <li>
+      <div class="timeline-badge">3</div>
+      <div class="timeline-panel">
+        <div class="timeline-heading">
+          <h3 class="timeline-title">January 1, 1901</h3>
+        </div>
+        <div class="timeline-body">
+          <p>The six British colonies (New South Wales, Victoria, Western Australia, Tasmania, Queensland, and Southern Australia) <i>federated</i> to form Australia. Aboriginals were excluded from public referendums and discussions about drafting the constitution even though they were the first peoples of Australia. 
+</p>
+    <li class="timeline-inverted">
+      <div class="timeline-badge-2">4</div>
+      <div class="timeline-panel">
+        <div class="timeline-heading">
+          <h3 class="timeline-title">December 23, 1901</h3>
+        </div>
+        <div class="timeline-body">
+          <p>The inception of the <i>White Australia Policy</i>. Although the policy was formed primarily to cease non-white (especially Asian) immigration to Australia, the Aboriginal population was also largely affected by this policy as they were thought to be an <i>inferior ‘dying race’</i>. It set a prejudiced belief against Aboriginals and was a precursor for the <i>stolen generations</i>.</p>
+        </div>
+      </div>
+    </li>
+        </div>
+      </div>
+    </li>
+    <li>
+      <div class="timeline-badge">5</div>
+      <div class="timeline-panel">
+        <div class="timeline-heading">
+          <h3 class="timeline-title">15 February, 1915</h3>
+        </div>
+        <div class="timeline-body">
+          <p>The legislation of the <i>Aborigines Protection Amending Act 1915</i> granted full power to the Australian Protection Board to remove an Aborigine child from his/her family without having to prove a violation of the <i>Neglected Children and Juvenile Offenders Act 1905</i> in court. It overwrote the <i>Aborigines Protection Act 1909</i> which stated that the Board could assume custody of a child <i>only</i> if the court found the child to be neglected. </p>
+        </div>
+      </div>
+    </li>
+    <li class="timeline-inverted">
+      <div class="timeline-badge-2">6</div>
+      <div class="timeline-panel">
+        <div class="timeline-heading">
+          <h3 class="timeline-title">August 1937</h3>
+        </div>
+        <div class="timeline-body">
+          <p>William Cooper, the founding member of the <i>Australian Aborigines’</i> League, sent a petition to the then Prime Minister Joseph Lyons requesting it to be forwarded to King George VI. The petition implored the government to improve Aboriginal wellbeing and ensure their representation in Parliament. The government acknowledged receipt of the petition but didn’t forward it to the king as requested.
+</p>
+        </div>
+      </div>
+    </li>
+    <li>
+      <div class="timeline-badge-3">7</div>
+      <div class="timeline-panel">
+        <div class="timeline-heading">
+          <h3 class="timeline-title">26 January, 1938</h3>
+        </div>
+        <div class="timeline-body">
+          <p>The sesquicentenary(150th) anniversary of <i>Australia Day</i> was a joyous day for Australians marked by some spectacular celebrations - spirited parades, sporting competitions, and acts organised in Sydney. But for some groups of Aboriginals, it marked a day of retaliation against insensitive treatment. And so, as organised by the <i>Aborigines Progressive Association</i>, they gathered to protest. Some highlights were the symbolic funeral march (Aboriginals marched in silent protest from Town Hall to Australian Hall after the parade had passed to convene for the <i>Australian Aborigines Conference</i> chaired by <i>Jack Patten</i>), the placards declaring - <i>“Aboriginals Claim Citizens Rights”</i>, and  powerful speeches that listed their grievances and their demand for <i>10 civil rights</i>.</p>
+<figure>
+  <img src='dom.jpg' alt="Day of Mourning Protest" style="width:100%">
+  <figcaption style = "font-size:10"><i>A gathering of Aboriginals displaying placards as a means of protest against their discriminative treatment on the Day of Mourning (Source: State Library of NSW)</i></figcaption>
+</figure>
+        </div>
+      </div>
+    </li>
+    <li class="timeline-inverted">
+      <div class="timeline-badge-2">8</div>
+      <div class="timeline-panel">
+        <div class="timeline-heading">
+          <h3 class="timeline-title">31 January, 1938</h3>
+        </div>
+        <div class="timeline-body">
+          <p>Prime Minister Joseph Lyons met <i>20 Aboriginal delegates</i> to hear a proposal for an <i>Aboriginal national policy</i>. The delegates proposed a separate ministry of Aboriginal Affairs, Commonwealth control, and application of fundamental rights for Aboriginals. Joseph Lyons rejected the proposal citing that Commonwealth control wasn’t possible under the Constitution.</p>
+        </div>
+      </div>
+    </li>
+    <li>
+      <div class="timeline-badge-3">9</div>
+      <div class="timeline-panel">
+        <div class="timeline-heading">
+          <h3 class="timeline-title">April - September 1938</h3>
+        </div>
+        <div class="timeline-body">
+          <p>The issuing of - <i>The Australian ‘ABO CALL’</i>. It claimed to be a newspaper that was <i>‘The Voice of The Aborigines’</i>. Edited by Jack Patten, the paper restated some of the Aboriginal demands that were denied and raised awareness of their poor treatment.</p>
+  <img src='abo.png' alt="ABO CALL Newsletter" style="width:80%; height:80%">
+  <figcaption style = "font-size:10"><i>The first issue of the 'ABO CALL'. It showed great support toward the Aboriginal cause. (Source: Australian Institute of 
+<br> Aboriginal and Torres Strait Islander Studies)</br></i></figcaption>
+</figure>
+        </div>
+      </div>
+    </li>
+    <li class="timeline-inverted">
+      <div class="timeline-badge-2">10</div>
+      <div class="timeline-panel">
+        <div class="timeline-heading">
+          <h3 class="timeline-title">27 May, 1967</h3>
+        </div>
+        <div class="timeline-body">
+          <p>The <i>1967 referendum</i> victory granted the Australian federal government the power to legislate laws explicitly for Aboriginals and gave Aboriginals the <i>status of citizenship</i>.</p>
+        </div>
+      </div>
+    </li>
+    <li>
+      <div class="timeline-badge">11</div>
+      <div class="timeline-panel">
+        <div class="timeline-heading">
+          <h3 class="timeline-title">16 December, 1976</h3>
+        </div>
+        <div class="timeline-body">
+          <p>The <i>Aboriginal Land Rights Act of 1976</i> enabled those in the Northern Territory to claim ownership of land based on traditional connections. It was the first time the Australian government officially recognised the Aboriginal land-ownership system.</p>
+        </div>
+      </div>
+    </li>
+ <li class="timeline-inverted">
+      <div class="timeline-badge-2">12</div>
+      <div class="timeline-panel">
+        <div class="timeline-heading">
+          <h3 class="timeline-title">1992-1993</h3>
+        </div>
+        <div class="timeline-body">
+          <p>On June 3, 1992 the <i>Mabo Decision</i> recognised traditional ownership of Murray Island by a group of Torres Strait Islanders and in the latter half of 1993, the Native Title Act recognised native titles and established mechanisms to claim native entitlements.</p>
+        </div>
+      </div>
+    </li>
+   <li>
+      <div class="timeline-badge">13</div>
+      <div class="timeline-panel">
+        <div class="timeline-heading">
+          <h3 class="timeline-title">2008</h3>
+        </div>
+        <div class="timeline-body">
+          <p>The inception of the <i>‘closing the gap’</i> initiative (an initiative that aimed at ameliorating the education and health of Aboriginals) and the formal <i>‘apology to the stolen generations’</i> by Prime Minister Kevin Rudd were some important reconciliatory measures taken by the Australian government.</p>
+        </div>
+      </div>
+    </li>
+  </ul>
+</body>
+</html>
